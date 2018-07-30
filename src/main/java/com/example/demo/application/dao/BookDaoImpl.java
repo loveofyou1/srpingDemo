@@ -19,4 +19,10 @@ public class BookDaoImpl implements IBookDao {
     public List<Book> findByReader(String reader) {
         return bookMapper.findByReader(reader);
     }
+
+
+    @Override
+    public int addBook(Book book) {
+        return bookMapper.addBook(book);
+    }
 }

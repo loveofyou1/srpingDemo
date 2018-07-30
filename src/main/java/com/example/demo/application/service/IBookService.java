@@ -6,4 +6,7 @@ import java.util.List;
 
 public interface IBookService {
     public List<Book> findByReader(String reader);
+
+
+    public int addBook(Book book);
 }

@@ -22,14 +22,15 @@ public class DemoApplicationTests {
     @Autowired
     private IBookService iBookService;
 
+
     @Test
     public void contextLoads() {
     }
 
-    @Test
-    public void testBookService(){
-        List<Book>  lists = iBookService.findByReader("1");
-        logger.info("测试接口返回结果：{}",JSON.toJSONString(lists));
-    }
 
+    @Test
+    public void testBookService() {
+        List<Book> lists = iBookService.findByReader("1");
+        logger.info("测试接口返回结果：{}", JSON.toJSONString(lists));
+    }
 }

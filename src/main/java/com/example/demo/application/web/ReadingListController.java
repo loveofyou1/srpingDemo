@@ -21,7 +21,8 @@ public class ReadingListController {
     @Autowired
     private IBookService iBookService;
 
-    @RequestMapping(value = "/reader", method = {RequestMethod.GET,RequestMethod.POST})
+
+    @RequestMapping(value = "/reader", method = {RequestMethod.GET})
     public String readersBooks(String reader) {
         List<Book> books = new ArrayList<>();
         String result = null;
@@ -32,5 +33,18 @@ public class ReadingListController {
             logger.error("查询书籍目录出错：{}", JSON.toJSONString(books));
         }
         return result;
+    }
+
+
+    @RequestMapping(value = "/add", method = {RequestMethod.GET, RequestMethod.POST})
+    public String addBook(String title) {
+        Book book = new Book();
+        book.setIsbn("isbn");
+        book.setAuthor("sun");
+        book.setReader("dean");
+        book.setTitle(title);
+        book.setDescription("test title!");
+        int result = iBookService.addBook(book);
+        return String.valueOf(result);
     }
 }

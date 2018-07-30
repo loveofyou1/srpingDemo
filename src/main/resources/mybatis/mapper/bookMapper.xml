@@ -22,4 +22,8 @@
         from book
         where reader = #{reader}
     </select>
+
+    <insert id="addBook" parameterType="com.example.demo.application.domain.Book" useGeneratedKeys="true" keyProperty="id">
+        insert into book (id,reader,isbn,title,author,description) values (#{id},#{reader},#{isbn},#{title},#{author},#{description})
+    </insert>
 </mapper>

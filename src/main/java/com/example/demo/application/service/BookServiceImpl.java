@@ -19,6 +19,7 @@ public class BookServiceImpl implements IBookService {
     @Resource
     private IBookDao iBookDao;
 
+
     @Override
     public List<Book> findByReader(String reader) {
         List<Book> result = new ArrayList<>();
@@ -28,6 +29,18 @@ public class BookServiceImpl implements IBookService {
             logger.info("查询结果：{}", JSON.toJSONString(result));
         } catch (Exception e) {
             logger.error("查询书详细信息出错:{}", JSON.toJSONString(result), e);
+        }
+        return result;
+    }
+
+
+    @Override
+    public int addBook(Book book) {
+        int result = 0;
+        try {
+            result = iBookDao.addBook(book);
+        } catch (Exception e) {
+            logger.error("插入数据报错{}", e);
         }
         return result;
     }

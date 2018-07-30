@@ -9,4 +9,6 @@ import java.util.List;
 public interface BookMapper {
 
     List<Book> findByReader(String reader);
+
+    public int addBook(Book book);
 }

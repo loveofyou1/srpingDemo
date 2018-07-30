@@ -8,4 +8,6 @@ public interface IBookDao {
 
     public List<Book> findByReader(String reader);
 
+
+    public int addBook(Book book);
 }
