@@ -1,0 +1,32 @@
+#数据源
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: root
+
+
+#mybatis
+mybatis:
+  type-aliases-package=com: example.demo.application.domain
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  configuration:
+    cache-enabled: true
+    #查询时,关闭关联对象及时加载以提高性能
+    lazy-loading-enabled: false
+    #按需加载字段(加载字段由SQL指定),不会加载关联表的所有字段,以提高性能
+    aggressive-lazy-loading: false
+    #允许返回不同的结果集以达到通用的效果
+    multiple-result-sets-enabled: true
+    #对于批量更新操作缓存SQL以提高性能
+    default-executor-type: REUSE
+    #数据库执行超时时间
+    default-statement-timeout: 25000
+
+#actuator属性设置
+management:
+  endpoints:
+    #web: exposure:        include: *
+    actuator:
+      enabled: true
