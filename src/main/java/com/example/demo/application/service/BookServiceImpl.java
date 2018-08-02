@@ -11,6 +11,9 @@ import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author sunlei19
+ */
 @Service
 public class BookServiceImpl implements IBookService {
 

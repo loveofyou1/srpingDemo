@@ -8,6 +8,9 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
 
+/**
+ * @author sunlei19
+ */
 @ComponentScan("com.example.demo.application.mapper")
 @Service
 public class BookDaoImpl implements IBookDao {

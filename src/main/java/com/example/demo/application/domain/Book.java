@@ -3,6 +3,9 @@ package com.example.demo.application.domain;
 
 import lombok.Data;
 
+/**
+ * @author sunlei19
+ */
 @Data
 public class Book {
 
