@@ -2,6 +2,8 @@ package com.example.demo.application.dao;
 
 import com.example.demo.application.domain.UserVO;
 
+import java.util.List;
+
 /**
  * @author sunlei19
  */
@@ -22,4 +24,10 @@ public interface IUserDao {
      * @return
      */
     UserVO queryUserInfoByName(String userName);
+
+
+    /**
+     * @return
+     */
+    List<UserVO> list();
 }

@@ -5,6 +5,7 @@ import com.example.demo.application.domain.UserVO;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author sunlei19
@@ -23,5 +24,11 @@ public class UserServiceImpl implements IUserService {
     @Override
     public UserVO queryUserInfoByName(String userName) {
         return iUserDao.queryUserInfoByName(userName);
+    }
+
+
+    @Override
+    public List<UserVO> list() {
+        return iUserDao.list();
     }
 }

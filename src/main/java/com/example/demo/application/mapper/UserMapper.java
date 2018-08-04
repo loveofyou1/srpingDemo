@@ -3,6 +3,8 @@ package com.example.demo.application.mapper;
 import com.example.demo.application.domain.UserVO;
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
 /**
  * @author sunlei19
  */
@@ -24,4 +26,10 @@ public interface UserMapper {
      * @return
      */
     UserVO queryUserInfoByName(String userName);
+
+
+    /**
+     * @return
+     */
+    List<UserVO> list();
 }

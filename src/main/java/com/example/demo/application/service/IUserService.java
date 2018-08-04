@@ -2,6 +2,8 @@ package com.example.demo.application.service;
 
 import com.example.demo.application.domain.UserVO;
 
+import java.util.List;
+
 /**
  * @author sunlei19
  */
@@ -22,4 +24,10 @@ public interface IUserService {
      * @return
      */
     UserVO queryUserInfoByName(String userName);
+
+
+    /**
+     * @return
+     */
+    List<UserVO> list();
 }

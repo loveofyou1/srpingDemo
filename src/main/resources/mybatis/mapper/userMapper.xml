@@ -22,4 +22,8 @@
     <select id="queryUserByName" resultMap="userInfoResultMap">
         SELECT * FROM user_t where user_name = #{userName}
     </select>
+
+    <select id="list" resultMap="userInfoResultMap">
+        select  * from user_t
+    </select>
 </mapper>

@@ -5,6 +5,7 @@ import com.example.demo.application.mapper.UserMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author sunlei19
@@ -23,5 +24,11 @@ public class UserDaoImpl implements IUserDao{
     @Override
     public UserVO queryUserInfoByName(String userName) {
         return userMapper.queryUserInfoByName(userName);
+    }
+
+
+    @Override
+    public List<UserVO> list() {
+        return userMapper.list();
     }
 }
