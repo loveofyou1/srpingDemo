@@ -1,17 +1,15 @@
-package com.example.demo.application.mapper;
+package com.example.demo.dao;
 
-import com.example.demo.application.domain.UserVO;
-import org.apache.ibatis.annotations.Mapper;
+import com.example.demo.domain.UserVO;
 
 import java.util.List;
 
 /**
  * @author sunlei19
  */
-@Mapper
-public interface UserMapper {
+public interface IUserDao {
     /**
-     * 用户id查询用户信息
+     * 根据用户id查询用户信息
      *
      * @param id
      * @return
@@ -31,5 +29,5 @@ public interface UserMapper {
     /**
      * @return
      */
-    List<UserVO> list();
+    List<UserVO> getList();
 }

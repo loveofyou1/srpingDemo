@@ -1,8 +1,8 @@
-package com.example.demo.application.web;
+package com.example.demo.web;
 
 import com.alibaba.fastjson.JSON;
-import com.example.demo.application.domain.Book;
-import com.example.demo.application.service.IBookService;
+import com.example.demo.domain.Book;
+import com.example.demo.service.IBookService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

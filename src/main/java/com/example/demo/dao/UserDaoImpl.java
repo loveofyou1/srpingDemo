@@ -1,7 +1,7 @@
-package com.example.demo.application.dao;
+package com.example.demo.dao;
 
-import com.example.demo.application.domain.UserVO;
-import com.example.demo.application.mapper.UserMapper;
+import com.example.demo.domain.UserVO;
+import com.example.demo.mapper.UserMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -28,7 +28,7 @@ public class UserDaoImpl implements IUserDao{
 
 
     @Override
-    public List<UserVO> list() {
-        return userMapper.list();
+    public List<UserVO> getList() {
+        return userMapper.getList();
     }
 }

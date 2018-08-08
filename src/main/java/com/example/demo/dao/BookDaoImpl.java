@@ -1,7 +1,7 @@
-package com.example.demo.application.dao;
+package com.example.demo.dao;
 
-import com.example.demo.application.domain.Book;
-import com.example.demo.application.mapper.BookMapper;
+import com.example.demo.domain.Book;
+import com.example.demo.mapper.BookMapper;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @author sunlei19
  */
-@ComponentScan("com.example.demo.application.mapper")
+@ComponentScan("com.example.demo.mapper")
 @Service
 public class BookDaoImpl implements IBookDao {
 

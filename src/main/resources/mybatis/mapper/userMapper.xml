@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="sun.dao.UserMapper">
+<mapper namespace="com.example.demo.mapper.UserMapper">
 
-    <resultMap id="userInfoResultMap" type="com.example.demo.application.domain.UserVO">
+    <resultMap id="userInfoResultMap" type="com.example.demo.domain.UserVO">
         <!--
             id:标签 查询结果集唯一的标识
             column：sql查询字段名（列名）
             property：pojo对应属性名
 
         -->
-        <id column="id" property="id"></id>
-        <result column="user_name" property="userName"/>
-        <result column="password" property="password"/>
-        <result column="age" property="age"/>
+        <id column="id" property="id" jdbcType="INTEGER"></id>
+        <result column="user_name" property="userName" jdbcType="VARCHAR"/>
+        <result column="password" property="password" jdbcType="VARCHAR"/>
+        <result column="age" property="age" jdbcType="INTEGER"/>
     </resultMap>
+
+    <sql id="query_list">
+        id,user_name,password,age
+    </sql>
 
     <select id="queryUserById" resultMap="userInfoResultMap">
       SELECT * FROM USER_T WHERE id = #{id}
@@ -23,7 +27,9 @@
         SELECT * FROM user_t where user_name = #{userName}
     </select>
 
-    <select id="list" resultMap="userInfoResultMap">
-        select  * from user_t
+    <select id="getList" resultMap="userInfoResultMap">
+        select
+        <include refid="query_list"/>
+        from user_t
     </select>
 </mapper>

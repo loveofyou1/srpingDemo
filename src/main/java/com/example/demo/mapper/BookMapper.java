@@ -1,6 +1,6 @@
-package com.example.demo.application.mapper;
+package com.example.demo.mapper;
 
-import com.example.demo.application.domain.Book;
+import com.example.demo.domain.Book;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

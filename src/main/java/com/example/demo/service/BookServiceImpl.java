@@ -1,8 +1,8 @@
-package com.example.demo.application.service;
+package com.example.demo.service;
 
 import com.alibaba.fastjson.JSON;
-import com.example.demo.application.dao.IBookDao;
-import com.example.demo.application.domain.Book;
+import com.example.demo.dao.IBookDao;
+import com.example.demo.domain.Book;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;

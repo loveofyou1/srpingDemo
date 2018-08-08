@@ -1,20 +1,22 @@
-package com.example.demo.application.service;
+package com.example.demo.mapper;
 
-import com.example.demo.application.domain.UserVO;
+import com.example.demo.domain.UserVO;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
 /**
  * @author sunlei19
  */
-public interface IUserService {
+@Mapper
+public interface UserMapper {
     /**
-     * 根据用户id查询用户信息
+     * 用户id查询用户信息
      *
      * @param id
      * @return
      */
-    UserVO queryUserInfoById(int id);
+    UserVO queryUserById(int id);
 
 
     /**
@@ -29,5 +31,5 @@ public interface IUserService {
     /**
      * @return
      */
-    List<UserVO> list();
+    List<UserVO> getList();
 }

@@ -1,4 +1,4 @@
-package com.example.demo.application.config;
+package com.example.demo.config;
 
 /**
  * @author sunlei19

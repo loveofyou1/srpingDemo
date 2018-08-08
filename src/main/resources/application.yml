@@ -1,25 +1,20 @@
 #数据源
 spring:
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
     username: root
     password: root
-#  thymeleaf:
-#    cache: true # Enable template caching.
-#    check-template: true # Check that the template exists before rendering it.
-#    check-template-location: true # Check that the templates location exists.
-#    enabled: true # Enable Thymeleaf view resolution for Web frameworks.
-#    encoding: UTF-8 # Template files encoding.
-#    mode: HTML5 # Template mode to be applied to templates. See also StandardTemplateModeHandlers.
-#    prefix: classpath:/templates/ # Prefix that gets prepended to view names when building a URL.
-#    suffix: .html # Suffix that gets appended to view names when building a URL.
-#    servlet:
-#      content-type: text/html # Content-Type value written to HTTP responses.
+    driverClassName: com.mysql.jdbc.Driver
+  thymeleaf:
+    cache: true # Enable template caching.
+    enabled: true # Enable Thymeleaf view resolution for Web frameworks.
+  messages:
+    basename: messages
+
 
 #mybatis
 mybatis:
-  type-aliases-package: com.example.demo.application.domain
+  type-aliases-package: com.example.demo.domain
   mapper-locations: classpath:mybatis/mapper/*.xml
   configuration:
     cache-enabled: true
@@ -34,9 +29,14 @@ mybatis:
     #数据库执行超时时间
     default-statement-timeout: 25000
 
+
 #actuator属性设置
-management:
-  endpoints:
-    #web: exposure:        include: *
-    actuator:
-      enabled: true
+#management:
+#  endpoints:
+#    #web: exposure:        include: *
+#    actuator:
+#      enabled: true
+#
+
+server:
+  port: 8080

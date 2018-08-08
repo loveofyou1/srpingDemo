@@ -1,20 +1,20 @@
-package com.example.demo.application.dao;
+package com.example.demo.service;
 
-import com.example.demo.application.domain.UserVO;
+import com.example.demo.domain.UserVO;
 
 import java.util.List;
 
 /**
  * @author sunlei19
  */
-public interface IUserDao {
+public interface IUserService {
     /**
      * 根据用户id查询用户信息
      *
      * @param id
      * @return
      */
-    UserVO queryUserById(int id);
+    UserVO queryUserInfoById(int id);
 
 
     /**
@@ -29,5 +29,5 @@ public interface IUserDao {
     /**
      * @return
      */
-    List<UserVO> list();
+    List<UserVO> getList();
 }

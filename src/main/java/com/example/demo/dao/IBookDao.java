@@ -1,6 +1,6 @@
-package com.example.demo.application.dao;
+package com.example.demo.dao;
 
-import com.example.demo.application.domain.Book;
+import com.example.demo.domain.Book;
 
 import java.util.List;
 
