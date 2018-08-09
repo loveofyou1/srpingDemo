@@ -31,4 +31,10 @@ public class UserDaoImpl implements IUserDao{
     public List<UserVO> getList() {
         return userMapper.getList();
     }
+
+
+    @Override
+    public Integer save(UserVO userVO) {
+        return userMapper.save(userVO);
+    }
 }

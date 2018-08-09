@@ -32,4 +32,11 @@
         <include refid="query_list"/>
         from user_t
     </select>
+
+    <insert id="save" parameterType="com.example.demo.domain.UserVO" useGeneratedKeys="true" keyProperty="id">
+        insert into  user_t(user_name,password,age) values (#{userName},#{password},#{age})
+        <selectKey resultType="int" keyProperty="id" order="AFTER">
+            select LAST_INSERT_ID()
+        </selectKey>
+    </insert>
 </mapper>

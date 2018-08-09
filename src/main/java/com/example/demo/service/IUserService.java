@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import com.example.demo.domain.UserVO;
+import org.apache.catalina.User;
 
 import java.util.List;
 
@@ -30,4 +31,12 @@ public interface IUserService {
      * @return
      */
     List<UserVO> getList();
+
+
+    /**
+     *
+     * @param userVO
+     * @return
+     */
+    Integer save(UserVO userVO);
 }

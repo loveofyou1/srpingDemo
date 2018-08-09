@@ -36,4 +36,10 @@ public class UserServiceImpl implements IUserService {
         log.info("查询用户列表服务======");
         return iUserDao.getList();
     }
+
+
+    @Override
+    public Integer save(UserVO userVO) {
+        return iUserDao.save(userVO);
+    }
 }

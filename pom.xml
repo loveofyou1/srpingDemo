@@ -123,10 +123,10 @@
             <resource>
                 <directory>src/main/resources</directory>
                 <includes>
-                    <include>**/*.yml</include>
-                    <include>**/*.xml</include>
-                    <include>**/*.html</include>
-                    <include>**/*.properties</include>
+                    <include>**/*.*</include>
+                    <!--                    <include>**/*.xml</include>
+                                        <include>**/*.html</include>
+                                        <include>**/*.properties</include>-->
                 </includes>
                 <filtering>false</filtering>
             </resource>

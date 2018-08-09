@@ -5,11 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-<table>
+<table border="0">
     <thead>
-    <tr>id</tr>
-    <tr>用户名</tr>
-    <tr>年龄</tr>
+    <tr>
+        <td>id</td>
+        <td>用户名</td>
+        <td>年龄</td>
+    </tr>
     </thead>
     <tbody>
     <tr>
@@ -17,8 +19,14 @@
         <td th:text=${user.userName}></td>
         <td th:text=${user.age}></td>
         <td th:text=${message}></td>
+
     </tr>
     </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="3" th:text="#{demo.test.proper}"></td>
+    </tr>
+    </tfoot>
 </table>
 </body>
 </html>

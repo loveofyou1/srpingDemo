@@ -32,4 +32,11 @@ public interface UserMapper {
      * @return
      */
     List<UserVO> getList();
+
+
+    /**
+     * @param userVO
+     * @return
+     */
+    public Integer save(UserVO userVO);
 }
