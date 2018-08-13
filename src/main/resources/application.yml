@@ -10,6 +10,13 @@ spring:
     enabled: true # Enable Thymeleaf view resolution for Web frameworks.
   messages:
     basename: messages
+  application:
+    name: spring-boot-redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 20000
+
 
 
 #mybatis
