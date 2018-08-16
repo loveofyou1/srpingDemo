@@ -1,0 +1,27 @@
+${AnsiColor.BRIGHT_YELLOW}
+lllllll                                                                  ffffffffffffffff
+l:::::l                                                                 f::::::::::::::::f
+l:::::l                                                                f::::::::::::::::::f
+l:::::l                                                                f::::::fffffff:::::f
+ l::::l    ooooooooooo vvvvvvv           vvvvvvv eeeeeeeeeeee          f:::::f       ffffffaaaaaaaaaaaaa  nnnn  nnnnnnnn       ggggggggg   ggggg
+ l::::l  oo:::::::::::oov:::::v         v:::::vee::::::::::::ee        f:::::f             a::::::::::::a n:::nn::::::::nn    g:::::::::ggg::::g
+ l::::l o:::::::::::::::ov:::::v       v:::::ve::::::eeeee:::::ee     f:::::::ffffff       aaaaaaaaa:::::an::::::::::::::nn  g:::::::::::::::::g
+ l::::l o:::::ooooo:::::o v:::::v     v:::::ve::::::e     e:::::e     f::::::::::::f                a::::ann:::::::::::::::ng::::::ggggg::::::gg
+ l::::l o::::o     o::::o  v:::::v   v:::::v e:::::::eeeee::::::e     f::::::::::::f         aaaaaaa:::::a  n:::::nnnn:::::ng:::::g     g:::::g
+ l::::l o::::o     o::::o   v:::::v v:::::v  e:::::::::::::::::e      f:::::::ffffff       aa::::::::::::a  n::::n    n::::ng:::::g     g:::::g
+ l::::l o::::o     o::::o    v:::::v:::::v   e::::::eeeeeeeeeee        f:::::f            a::::aaaa::::::a  n::::n    n::::ng:::::g     g:::::g
+ l::::l o::::o     o::::o     v:::::::::v    e:::::::e                 f:::::f           a::::a    a:::::a  n::::n    n::::ng::::::g    g:::::g
+l::::::lo:::::ooooo:::::o      v:::::::v     e::::::::e               f:::::::f          a::::a    a:::::a  n::::n    n::::ng:::::::ggggg:::::g
+l::::::lo:::::::::::::::o       v:::::v       e::::::::eeeeeeee       f:::::::f          a:::::aaaa::::::a  n::::n    n::::n g::::::::::::::::g
+l::::::l oo:::::::::::oo         v:::v         ee:::::::::::::e       f:::::::f           a::::::::::aa:::a n::::n    n::::n  gg::::::::::::::g
+llllllll   ooooooooooo            vvv            eeeeeeeeeeeeee       fffffffff            aaaaaaaaaa  aaaa nnnnnn    nnnnnn    gggggggg::::::g
+                                                                                                                                        g:::::g
+                                                                                                                            gggggg      g:::::g
+                                                                                                                            g:::::gg   gg:::::g
+                                                                                                                             g::::::ggg:::::::g
+                                                                                                                              gg:::::::::::::g
+                                                                                                                                ggg::::::ggg
+                                                                                                                                   gggggg
+
+${AnsiColor.BLUE}
+::: Project (version:${application.version}) ::: ${spring-boot.version}

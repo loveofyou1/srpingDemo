@@ -12,6 +12,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
@@ -25,6 +26,9 @@ public class UserController {
 
     @Autowired
     private IUserService iUserService;
+
+    @Autowired
+    private String getProperties;
 
 
     /**
@@ -105,5 +109,9 @@ public class UserController {
         return "index";
     }
 
-
+    @ResponseBody
+    @RequestMapping(value = "/prop")
+    public String prop() {
+        return getProperties;
+    }
 }

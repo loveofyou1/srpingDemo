@@ -5,10 +5,13 @@
     <title>多层循环</title>
 </head>
 <body>
-<select th:each="one:${data}">
+<!--<select th:each="one:${data}">
     <option th:each="two:${one.twoLayer}" th:selected="${two.id == 2}"
             th:value="${two.id} eq ${two.attr} ? ${two.attr}:'1' " th:text="${two.attr.replaceAll('e','a')}"></option>
 
+</select>-->
+<select th:each="top:${data}">
+    <option  th:each="one : ${top.oneLayer}" th:selected="${one.oneId == 1}" th:value="${#lists.isEmpty(one.twoLayer)}"  th:text="${one.oneId}"></option>
 </select>
 </body>
 </html>
