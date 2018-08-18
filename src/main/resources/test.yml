@@ -1,5 +1,0 @@
-#yaml 文件
-demo:
-  id: "1"
-  name: "hello"
-  property: "prop"
