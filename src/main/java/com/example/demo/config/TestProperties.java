@@ -11,13 +11,11 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "demo")
 public class TestProperties {
-    @Value(value = "1")
+    @Value(value = "${id}")
     private String id;
-
-    @Value(value = "hello")
+    @Value(value = "${name}")
     private String name;
-
-    @Value(value = "properties")
+    @Value(value = "${property}")
     private String property;
 
 
