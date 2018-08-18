@@ -53,3 +53,9 @@ application:
 
 spring-boot:
   version: 2.0.3.RELEASE
+
+
+demo:
+  id: "1"
+  name: "hello"
+  property: "prop"

@@ -12,8 +12,6 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-@EnableConfigurationProperties(TestProperties.class)
-@ComponentScan
 public class TestConfig {
 
     @Autowired

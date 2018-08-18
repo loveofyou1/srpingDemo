@@ -18,7 +18,6 @@ import java.util.Locale;
  */
 @Configuration
 @EnableAutoConfiguration
-@ComponentScan
 public class LocaleConfig extends WebMvcConfigurationSupport {
 
     @Bean
